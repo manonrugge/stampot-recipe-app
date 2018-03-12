@@ -1,0 +1,90 @@
+// main final recipe section styles goes here
+
+.result-recipe {
+    background-color:#2875c8;
+    color: white;
+    margin-bottom: 0;
+    height: 100%;
+    text-align: left;
+    h2 {
+        text-align: center;
+        padding: 20px;
+        margin: 20px 0px;
+    }
+    h4 {
+        margin: 0;
+    }
+}
+
+.main-carousel {
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.recipe-container, .recipe-info {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 768px) {
+    .result-recipe {
+        height: 100%;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .result-recipe {
+        height: 100%;
+        .recipePhoto {
+         width: 100%;
+         padding: 0;
+        }
+        .recipe-container, 
+        .recipe-info,
+        .recipe-ingredients {
+        margin-top: 20px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width: 95%;
+        }
+        .recipe-illustrations {
+            display: none;
+        }
+    }
+}
+
+.recipe-ingredients {
+    width: 40%;
+    line-height: 25px;
+}
+
+.recipe-illustrations {
+    width: 60%;
+    padding-left: 10px;
+}
+
+.recipePhoto {
+    width: 60%;
+}
+
+.recipePhoto, .recipe-method {
+    padding: 20px 20px 20px 0px;
+    line-height: 25px;
+}
+
+.recipe-info {
+    padding-top: 20px;
+    border-top: 1px solid white;
+}
+
+.carouselCell {
+  width: 100% ;
+  margin-right: 10px;
+}
+
+

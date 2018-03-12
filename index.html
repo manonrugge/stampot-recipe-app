@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Stamppot</title>
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./public/styles/style.css">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+</head>
+
+<body>
+
+	<!-- === Page header goes here === -->
+
+	<header>
+		<div class="header-text wrapper">
+			<h2>Comfort Food!</h2>
+			<h1>Which Stamppot should I </br> eat for dinner?</h1>
+			<button>
+				<i class="fas fa-arrow-down"></i>
+			</button>
+		</div>
+	</header>
+
+	<main class="wrapper">
+
+		<!-- === Page about goes here === -->
+
+		<section class="about-stamppot" id="aboutStamppot">
+			<div class="pan">
+				<img src="./public/assets/pan.svg" alt="">
+			</div>
+			<div>
+				<h2>What is Stamppot?</h2>
+				<p>Arguably this is the Netherland's most famous dish. It consists out of one vegatable and potato mash, served with different
+					toppings to add color and flavour. This is a dish that is very popular during the winter season. As with all traditional
+					dishes, there are many recipes for this dish. So where do you start? Well, I will help you to get started!</p>
+			</div>
+		</section>
+
+		<!-- === Select main ingredient goes here === -->
+
+		<form action="#">
+
+			<section class="mainIngredient">
+
+				<h4>Which kind of potato do you wanna use as a main ingredient?</h4>
+				<div class="potato">
+					<img src="./public/assets/potato.png" alt="">
+					<label for="potato">Potatoes</label>
+					<input type="radio" name="ingredient" id="potato" value="potato" autocomplete="off">
+				</div>
+
+				<div class="sweet-potato">
+					<img src="./public/assets/sweet_potato.png" alt="">
+					<label for="sweet-potato">Sweet Potatoes</label>
+					<input type="radio" name="ingredient" id="sweet-potato" value="sweet-potato" autocomplete="off">
+				</div>
+
+			</section>
+
+
+			<!-- === Select secondary ingredient goes here === -->
+
+			<section class="secIngredient hidden">
+
+				<h4>Which vegetable would you like to add to your mashed potatoes?</h4>
+				<div class="potato vegetable kale secHidden">
+					<img src="./public/assets/kale.png" alt="">
+					<label for="kale">Kale</label>
+					<input type="radio" name="secIngredient" id="kale" value="kale">
+				</div>
+
+				<div class="potato vegetable beets secHidden">
+					<img src="./public/assets/beet.png" alt="">
+					<label for="beets">Beets</label>
+					<input type="radio" name="secIngredient" id="beets" value="beets" autocomplete="off">
+				</div>
+
+				<div class="potato vegetable raw-endive secHidden">
+					<img src="./public/assets/endive.png" alt="">
+					<label for="raw-endive">Raw Endive</label>
+					<input type="radio" name="secIngredient" id="raw-endive" value="raw-endive" autocomplete="off">
+				</div>
+
+				<div class="sweet-potato vegetable spinach secHidden">
+					<img src="./public/assets/spinach.png" alt="">
+					<label for="spinach">Spinach</label>
+					<input type="radio" checked="false" name="secIngredient" id="spinach" value="spinach" autocomplete="off">
+				</div>
+
+				<div class="sweet-potato vegetable sprouts secHidden">
+					<img src="./public/assets/sprout.png" alt="">
+					<label for="spinach">Sprouts</label>
+					<input type="radio" name="secIngredient" id="sprouts" value="sprouts" autocomplete="off">
+				</div>
+
+			</section>
+
+
+			<!-- === Select toppings goes here === -->
+
+			<section class="toppings hidden">
+
+				<h4>To finish your stamppot, what kind of topping do you prefer?</h4>
+
+				<ul>
+					<li class="beets-toppings" style="display: none">
+						<img src="./public/assets/apple_feta.png" alt="">
+						<label for="beets">Beets toppings</label>
+						<input type="radio" name="toppings" id="beets" value="beets-toppings" autocomplete="off">
+					</li>
+
+					<li class="kale-toppings" style="display: none">
+						<img src="./public/assets/bacon_sausage.png" alt="">
+						<label for="kale">Kale toppings</label>
+						<input type="radio" name="toppings" id="kale" value="kale-toppings" autocomplete="off">
+					</li>
+
+					<li class="raw-endive-toppings" style="display: none">
+						<img src="./public/assets/cheese_nutmeg.png" alt="">
+						<label for="raw-endive">Raw Endive toppings</label>
+						<input type="radio" name="toppings" id="raw-endive" value="raw-endive-toppings" autocomplete="off">
+					</li>
+
+					<li class="spinach-toppings" style="display: none">
+						<img src="./public/assets/goat_walnut.png" alt="">
+						<label for="spinach">Spinach toppings</label>
+						<input type="radio" name="toppings" id="spinach" value="spinach-toppings" autocomplete="off">
+					</li>
+
+					<li class="sprouts-toppings" style="display: none">
+						<img src="./public/assets/tofu_pepper.png" alt="">
+						<label for="sprouts">Sprouts toppings</label>
+						<input type="radio" name="toppings" id="sprouts" value="sprouts-toppings" autocomplete="off">
+					</li>
+				</ul>
+
+			</section>
+
+		</form>
+
+	</main>
+
+	<!-- === Users final recipe goes here === -->
+
+	<section class="result-recipe hidden">
+
+		<div class="main-carousel"></div>
+
+	</section>
+
+
+	<!-- === Page footer goes here === -->
+
+	<footer class="clearfix">
+		<p class="copyright wrapper">© 2018 Manon Rugge, All Rights Reserved</p>
+	</footer>
+
+
+	<!-- === Scripts goes here === -->
+
+	<script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='
+	 crossorigin='anonymous'></script>
+
+
+	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+	<script src="./public/scripts/main.js"></script>
+
+</body>
+
+</html>
