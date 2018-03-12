@@ -18,6 +18,9 @@ header {
     color: white;
     h1 {
         font-size: 50px;
+        @media (max-width: 480px) {
+            font-size: 40px;
+        }
     }
 }
 

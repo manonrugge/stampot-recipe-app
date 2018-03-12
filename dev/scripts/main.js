@@ -111,27 +111,27 @@ dish.events = function () {
         if (nextSelected === 'kale') {
             $(`.vegetable`).addClass('hidden'),
                 $(`.kale`).removeClass('hidden'),
-                $(`.toppings`).show('slow')
+                $(`.toppings`).show()
             $(`.toppings .kale-toppings`).show();
         } else if (nextSelected === 'beets') {
             $(`.vegetable`).addClass('hidden'),
                 $(`.beets`).removeClass('hidden')
-            $(`.toppings`).show('slow')
+            $(`.toppings`).show()
             $(`.toppings .beets-toppings`).show();
         } else if (nextSelected === 'raw-endive') {
             $(`.vegetable`).addClass('hidden'),
                 $(`.raw-endive`).removeClass('hidden')
-            $(`.toppings`).show('slow')
+            $(`.toppings`).show()
             $(`.toppings .raw-endive-toppings`).show();
         } else if (nextSelected === 'spinach') {
             $(`.vegetable`).addClass('hidden'),
                 $(`.spinach`).removeClass('hidden')
-            $(`.toppings`).show('slow')
+            $(`.toppings`).show()
             $(`.toppings .spinach-toppings`).show();
         } else {
             $(`.vegetable`).addClass('hidden'),
                 $(`.sprouts`).removeClass('hidden')
-            $(`.toppings`).show('slow')
+            $(`.toppings`).show()
             $(`.toppings .sprouts-toppings`).show();
         };
 

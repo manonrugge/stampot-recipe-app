@@ -75,33 +75,43 @@
 
 				<h2>Which vegetable would you like to add to your mashed potatoes?</h2>
 				<div class="potato vegetable kale secHidden">
-					<img src="./public/assets/kale.png" alt="">
-					<label for="kale">Kale</label>
-					<input type="radio" name="secIngredient" id="kale" value="kale">
+					<img class="ingredient-img" src="./public/assets/kale.png" alt="">
+					<div class="userInput">
+						<label class="btn" for="kale">Kale</label>
+						<input class="checked" type="radio" name="secIngredient" id="kale" value="kale">
+					</div>
 				</div>
 
 				<div class="potato vegetable beets secHidden">
-					<img src="./public/assets/beet.png" alt="">
-					<label for="beets">Beets</label>
-					<input type="radio" name="secIngredient" id="beets" value="beets" autocomplete="off">
+					<img class="ingredient-img" src="./public/assets/beet.png" alt="">
+					<div class="userInput">
+						<label class="btn" for="beets">Beets</label>
+						<input class="checked" type="radio" name="secIngredient" id="beets" value="beets" autocomplete="off">
+					</div>
 				</div>
 
 				<div class="potato vegetable raw-endive secHidden">
-					<img src="./public/assets/endive.png" alt="">
-					<label for="raw-endive">Raw Endive</label>
-					<input type="radio" name="secIngredient" id="raw-endive" value="raw-endive" autocomplete="off">
+					<img class="ingredient-img" src="./public/assets/endive.png" alt="">
+					<div class="userInput">
+						<label class="btn" for="raw-endive">Raw Endive</label>
+						<input class="checked" type="radio" name="secIngredient" id="raw-endive" value="raw-endive" autocomplete="off">
+					</div>
 				</div>
 
 				<div class="sweet-potato vegetable spinach secHidden">
-					<img src="./public/assets/spinach.png" alt="">
-					<label for="spinach">Spinach</label>
-					<input type="radio" name="secIngredient" id="spinach" value="spinach" autocomplete="off">
+					<img class="ingredient-img" src="./public/assets/spinach.png" alt="">
+					<div class="userInput">
+						<label class="btn" for="spinach">Spinach</label>
+						<input class="checked" type="radio" name="secIngredient" id="spinach" value="spinach" autocomplete="off">
+					</div>
 				</div>
 
 				<div class="sweet-potato vegetable sprouts secHidden">
-					<img src="./public/assets/sprout.png" alt="">
-					<label for="spinach">Sprouts</label>
-					<input type="radio" name="secIngredient" id="sprouts" value="sprouts" autocomplete="off">
+					<img class="ingredient-img" src="./public/assets/sprout.png" alt="">
+					<div class="userInput">
+						<label class="btn" for="spinach">Sprouts</label>
+						<input class="checked" type="radio" name="secIngredient" id="sprouts" value="sprouts" autocomplete="off">
+					</div>
 				</div>
 
 			</section>
@@ -115,33 +125,41 @@
 
 				<ul>
 					<li class="beets-toppings" style="display: none">
-						<img src="./public/assets/apple_feta.png" alt="">
-						<label for="beets">Beets toppings</label>
-						<input type="radio" name="toppings" id="beets" value="beets-toppings" autocomplete="off">
+						<img class="ingredient-img" src="./public/assets/apple_feta.png" alt="">
+						<div class="userInput">
+							<label class="btn" for="beets">Apple and Feta</label>
+							<input class="checked" type="radio" name="toppings" id="beets" value="beets-toppings" autocomplete="off">
+						</div>
 					</li>
 
 					<li class="kale-toppings" style="display: none">
-						<img src="./public/assets/bacon_sausage.png" alt="">
-						<label for="kale">Kale toppings</label>
-						<input type="radio" name="toppings" id="kale" value="kale-toppings" autocomplete="off">
+						<img class="ingredient-img" src="./public/assets/bacon_sausage.png" alt="">
+						<div class="userInput">
+							<label class="btn" for="kale">Bacon and Sausage</label>
+							<input class="checked" type="radio" name="toppings" id="kale" value="kale-toppings" autocomplete="off">
+						</div>
 					</li>
 
 					<li class="raw-endive-toppings" style="display: none">
-						<img src="./public/assets/cheese_nutmeg.png" alt="">
-						<label for="raw-endive">Raw Endive toppings</label>
-						<input type="radio" name="toppings" id="raw-endive" value="raw-endive-toppings" autocomplete="off">
+						<img class="ingredient-img" src="./public/assets/cheese_nutmeg.png" alt="">
+						<label class="btn" for="raw-endive">Cheese Cubes and Nutmeg</label>
+						<input class="checked" type="radio" name="toppings" id="raw-endive" value="raw-endive-toppings" autocomplete="off">
 					</li>
 
 					<li class="spinach-toppings" style="display: none">
-						<img src="./public/assets/goat_walnut.png" alt="">
-						<label for="spinach">Spinach toppings</label>
-						<input type="radio" name="toppings" id="spinach" value="spinach-toppings" autocomplete="off">
+						<img class="ingredient-img" src="./public/assets/goat_walnut.png" alt="">
+						<div class="userInput">
+							<label class="btn" for="spinach">Goat Cheese and Walnuts</label>
+							<input class="checked" type="radio" name="toppings" id="spinach" value="spinach-toppings" autocomplete="off">
+						</div>
 					</li>
 
 					<li class="sprouts-toppings" style="display: none">
-						<img src="./public/assets/tofu_pepper.png" alt="">
-						<label for="sprouts">Sprouts toppings</label>
-						<input type="radio" name="toppings" id="sprouts" value="sprouts-toppings" autocomplete="off">
+						<img class="ingredient-img" src="./public/assets/tofu_pepper.png" alt="">
+						<div class="userInput">
+							<label class="btn" for="sprouts">Tofu and Pepper</label>
+							<input class="checked" type="radio" name="toppings" id="sprouts" value="sprouts-toppings" autocomplete="off">
+						</div>
 					</li>
 				</ul>
 
