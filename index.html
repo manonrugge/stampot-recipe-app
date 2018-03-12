@@ -49,17 +49,21 @@
 
 			<section class="mainIngredient">
 
-				<h4>Which kind of potato do you wanna use as a main ingredient?</h4>
+				<h2>Which kind of potato do you wanna use as a main ingredient?</h2>
 				<div class="potato">
-					<img src="./public/assets/potato.png" alt="">
-					<label for="potato">Potatoes</label>
-					<input type="radio" name="ingredient" id="potato" value="potato" autocomplete="off">
+					<img class="ingredient-img" src="./public/assets/potato.png" alt="">
+					<div class="userInput">
+						<label class="btn" for="potato">Potatoes</label>
+						<input class="checked" type="radio" name="ingredient" id="potato" value="potato" autocomplete="off">
+					</div>
 				</div>
 
 				<div class="sweet-potato">
-					<img src="./public/assets/sweet_potato.png" alt="">
-					<label for="sweet-potato">Sweet Potatoes</label>
-					<input type="radio" name="ingredient" id="sweet-potato" value="sweet-potato" autocomplete="off">
+					<img class="ingredient-img" src="./public/assets/sweet_potato.png" alt="">
+					<div class="userInput">
+						<label class="btn" for="sweet-potato">Sweet Potatoes</label>
+						<input class="checked" type="radio" name="ingredient" id="sweet-potato" value="sweet-potato" autocomplete="off">
+					</div>
 				</div>
 
 			</section>
@@ -69,7 +73,7 @@
 
 			<section class="secIngredient hidden">
 
-				<h4>Which vegetable would you like to add to your mashed potatoes?</h4>
+				<h2>Which vegetable would you like to add to your mashed potatoes?</h2>
 				<div class="potato vegetable kale secHidden">
 					<img src="./public/assets/kale.png" alt="">
 					<label for="kale">Kale</label>
@@ -91,7 +95,7 @@
 				<div class="sweet-potato vegetable spinach secHidden">
 					<img src="./public/assets/spinach.png" alt="">
 					<label for="spinach">Spinach</label>
-					<input type="radio" checked="false" name="secIngredient" id="spinach" value="spinach" autocomplete="off">
+					<input type="radio" name="secIngredient" id="spinach" value="spinach" autocomplete="off">
 				</div>
 
 				<div class="sweet-potato vegetable sprouts secHidden">
@@ -107,7 +111,7 @@
 
 			<section class="toppings hidden">
 
-				<h4>To finish your stamppot, what kind of topping do you prefer?</h4>
+				<h2>To finish your stamppot, what kind of topping do you prefer?</h2>
 
 				<ul>
 					<li class="beets-toppings" style="display: none">
@@ -159,7 +163,7 @@
 	<!-- === Page footer goes here === -->
 
 	<footer class="clearfix">
-		<p class="copyright wrapper">© 2018 Manon Rugge, All Rights Reserved</p>
+		<p class="copyright wrapper">2018 © Manon Rugge</p>
 	</footer>
 
 

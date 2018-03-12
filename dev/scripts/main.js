@@ -8,22 +8,23 @@ $('button').on('click', function () {
     }, 1000);
 });
 
+
 // Recipes content 
 
 const recipes = {
     beets: {
-        title: "Stampot Raw Endive with Apples and Feta Cheese",
+        title: "Stamppot Raw Endive with Apples and Feta Cheese",
         ingredients: ["1 kilo potatoes", "bunch fresh kale", "2 onions chopped", "50g butter", "1 apple", "feta cheese"],
         illustrations: "./public/assets/tools_white.svg",
         photo: "./public/assets/recipe-03.jpg",
-        direction: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit molestias delectus repellendus! Cupiditate delectus optio velit dolore harum, possimus quis asperiores, cum et id impedit? Aliquam accusantium voluptates deserunt et?"
+        direction: "Prepare the vegetables: Peel and roughly chop the potato and chop the Raw Endive and Apple. Place the chopped vegetables in a large stock pot, and add water to barely cover. Place over heat, cover, bring to the boil, then reduce heat and simmer until vegetables are tender, around 20 minutes. Meanwhile, cook the rookworst as per the instructions on the wrap, or saute the chorizo, or other spicy saudage you choose, in a little oil. Slice, then keep warm. Drain the vegetables well, then mash - but not too smoothly - some lumps are good ;-) Season with salt and pepper to taste. Add the butter, and mix through the apple pieces. If desired, stir through the chopped parsley. Serve the stamppot topped with the Feta!."
     },
     kale: {
         title: "Stamppot Kale and Smoked Sausage",
         ingredients: ["1 kilo potatoes", "bunch fresh kale", "2 onions chopped", "50g butter"],
         illustrations: "./public/assets/tools_white.svg",
         photo: "./public/assets/recipe-02.jpg",
-        direction: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit molestias delectus repellendus! Cupiditate delectus optio velit dolore harum, possimus quis asperiores, cum et id impedit? Aliquam accusantium voluptates deserunt et? Fugit molestias delectus repellendus! Cupiditate delectus optio velit dolore harum, possimus quis asperiores, cum et id impedit? Aliquam accusantium voluptates deserunt et?"
+        direction: "Prepare the vegetables: Peel and roughly chop the potato. Wash any grit from the kale, then slice fairly finely. Place the chopped vegetables in a large stock pot, and add water to barely cover. Place over heat, cover, bring to the boil, then reduce heat and simmer until vegetables are tender, around 20 minutes. Meanwhile, cook the Smoked Sausage as per the instructions on the wrap, or saute the chorizo, or other spicy sausage you choose, in a little oil. Slice, then keep warm. Drain the vegetables well, then mash - but not too smoothly - some lumps are good. Season with salt and pepper to taste. Add the butter, and mix through. If desired, stir through the chopped onion. Serve the stamppot topped with the sliced sausage, and if you are really decadent, with an extra knob of butter!"
     },
 };
 
@@ -77,7 +78,7 @@ dish.events = function () {
 
     $('form').on('radio', function (event) {
         event.preventDefault();
-        //this stops the form in this case from refreshing the page.
+        
     });
 
     const ingredients = []
