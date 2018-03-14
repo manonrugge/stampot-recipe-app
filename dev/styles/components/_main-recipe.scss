@@ -25,7 +25,6 @@
   visibility: hidden;
 }
 
-
 .recipe-container, .recipe-info {
     margin-top: 20px;
     display: flex;
@@ -36,25 +35,24 @@
     .result-recipe {
         height: 100%;
     }
-
 }
 
 @media (max-width: 480px) {
     .result-recipe {
         height: 100%;
         .recipePhoto {
-         width: 100%;
-         padding: 0;
+            width: 100%;
+            padding: 0;
         }
         .recipe-container, 
         .recipe-info,
         .recipe-ingredients {
-        margin-top: 20px auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        width: 95%;
+            margin-top: 20px auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            width: 95%;
         }
         .recipe-illustrations {
             display: none;
@@ -87,8 +85,8 @@
 }
 
 .carouselCell {
-  width: 100% ;
-  margin-right: 10px;
+    width: 100% ;
+    margin-right: 10px;
 }
 
 

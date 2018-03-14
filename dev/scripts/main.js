@@ -107,7 +107,7 @@ dish.events = function () {
 
     $('input[name=secIngredient]').on('change', function () {
         const nextSelected = $('input[name=secIngredient]:checked').val();
-
+        console.log('inside ingredient', nextSelected)
         if (nextSelected === 'kale') {
             $(`.vegetable`).addClass('hidden'),
                 $(`.kale`).removeClass('hidden'),
@@ -147,6 +147,7 @@ dish.events = function () {
 
     $('input[name=toppings]').on('change', function () {
         const finalSelection = $('input[name=toppings]:checked').val();
+        console.log('inside toppings', finalSelection)
 
         if (finalSelection === 'beets-toppings') {
             $(`.result-recipe`).removeClass('hidden')

@@ -13,6 +13,9 @@ body {
     font-family: 'Quicksand', sans-serif;
     background-image: linear-gradient(rgba(255,255,255,0.7)), url("./../assets/ruit_blauw.jpg");
     background-repeat: repeat;
+    -o-background-repeat: repeat;
+    -moz-background-repeat: repeat;
+    -webkit-background-repeat:repeat;
     background-size: 100px 100px;
     text-align: center;
     color: $primary;
@@ -44,8 +47,6 @@ h2 {
 section {
     margin: 100px 0px;
 }
-
-
 
 @media (max-width: 480px) {
 	.wrapper {
